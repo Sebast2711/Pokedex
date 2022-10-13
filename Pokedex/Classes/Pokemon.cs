@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Pokedex.Classes
 {
@@ -37,5 +38,18 @@ namespace Pokedex.Classes
             this.Description = description;
         }
 
+        public override string ToString()
+        {
+            var PV = from ca in this.Caracteristiques
+                     where ca.statistique == "PV"
+                     select new 
+                     {
+                         Nom = ca.statistique,
+                         Value = ca.valeur + ca.IV + ca.EV
+                     };
+            return $"{Nom} - {Type.Nom} " +
+                   $"\n {Description}" +
+                   $"\n {PV}";
+        }
     }
 }
