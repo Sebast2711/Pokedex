@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Pokedex.Classes
 {
-    class Pokemon
+    public class Pokemon
     {
         public string Nom { get; set; }
         public Type Type { get; set; }
@@ -41,15 +41,20 @@ namespace Pokedex.Classes
         public override string ToString()
         {
             var PV = from ca in this.Caracteristiques
-                     where ca.statistique == "PV"
                      select new 
                      {
                          Nom = ca.statistique,
                          Value = ca.valeur + ca.IV + ca.EV
                      };
-            return $"{Nom} - {Type.Nom} " +
-                   $"\n {Description}" +
-                   $"\n {PV}";
+            string res = $"{Nom} - {Type.Nom} " +
+                         $"\n {Description} \n";
+
+            foreach (var item in PV)
+            {
+                res += item.Nom + " " + item.Value + "\n";
+            }
+
+            return res;
         }
     }
 }

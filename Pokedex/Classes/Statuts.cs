@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pokedex.Classes
 {
-    class Statuts
+    public class Statuts
     {
         public string Nom { get; set; }
         public byte DegatsInfliges { get; set; }

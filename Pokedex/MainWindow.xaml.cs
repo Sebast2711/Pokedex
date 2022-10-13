@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,6 +24,8 @@ namespace Pokedex
     public partial class MainWindow : Window
     {
         List<Pokemon> pokemonList = new List<Pokemon>();
+
+
         public MainWindow()
         {
             Type Electrique = new Type("Electrique");
@@ -38,14 +41,25 @@ namespace Pokedex
                 "Chaque fois que Pikachu découvre quelque chose de nouveau, " +
                 "il envoie un arc électrique. Lorsqu'on tombe sur une Baie carbonisée, " +
                 "ça signifie sans doute qu'un de ces Pokémon a envoyé une charge trop forte.");
+            Pikachu.Caracteristiques.Add(PV);
+            Pikachu.Caracteristiques.Add(AttSp);
+
             pokemonList.Add(Pikachu);
+
+
+
+            
+
             InitializeComponent();
+            foreach (Pokemon pokemon in pokemonList)
+                ListBoxPkmn.Items.Add(pokemon);
 
         }
 
         private void affpkmn(object sender, RoutedEventArgs e)
         {
-            ListBoxPkmn.Items.Add(pokemonList.FirstOrDefault());
+            // ListBoxPkmn.Items.Add (ListBoxPkmn.SelectedValue.ToString());
+            frame.Content = new Detail( (Pokemon) ListBoxPkmn.SelectedValue);
         }
     }
 }

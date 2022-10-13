@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pokedex.Classes
 {
-    class Type
+    public class Type
     {
         public string Nom { get; set; }
         List<Type> AvantageAttaque { get; set; }

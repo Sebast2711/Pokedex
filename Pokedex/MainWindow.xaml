@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pokedex"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="1000">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -15,7 +15,11 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <ListBox x:Name="ListBoxPkmn" Grid.Row="0" Grid.Column="0"></ListBox>
-        <Button x:Name="ButtonPkmn" Content="Afficher" Grid.Row="0" Grid.Column="1" Click="affpkmn"/>
+        <ListBox x:Name="ListBoxPkmn" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2"></ListBox>
+        <Button x:Name="ButtonPkmn" Content="Afficher" Grid.Row="0" Grid.Column="1" Click="affpkmn" Margin="0,212,0,5" Grid.RowSpan="2"/>
+       
+        <Frame x:Name="frame" Height="614" />
+
     </Grid>
+    
 </Window>

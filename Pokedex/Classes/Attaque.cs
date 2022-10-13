@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pokedex.Classes
 {
-    class Attaque
+    public class Attaque
     {
         public string Nom { get; set; }
         public byte Degats { get; set; }
