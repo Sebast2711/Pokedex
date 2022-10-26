@@ -30,5 +30,7 @@ namespace Pokedex
             Pokemon pokemon = pkmn;
             final.Text = pkmn.ToString();
         }
+
+
     }
 }

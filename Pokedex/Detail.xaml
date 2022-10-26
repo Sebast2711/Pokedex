@@ -7,16 +7,7 @@
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="1000"
       Title="Detail">
-
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <TextBox Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" x:Name="final"></TextBox>
-    </Grid>
+    <DockPanel>
+        <TextBox Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" x:Name="final" Height="450" Width="1000"></TextBox>
+    </DockPanel>
 </Page>

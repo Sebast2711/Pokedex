@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "MssO9Vg45zJmk7CiQFk+Xv3ADaAI5aoe3HQ+FDAzgmXBf1AK/1lf5Cm4gRLZe8/3uKWrAJfzrH9O3D3GVBThfw==",
+  "dgSpecHash": "01GmPTicXJ7akX/VR6hKuYsaoLxEwpXcJSACYIOIOD7f1ow0PEEfxayVtbln14vQipYUhtrZisKS0BwlrkA5Tg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Sebastien\\source\\repos\\Pokedex\\Pokedex\\Pokedex.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Sebastien\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Sebastien\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
+    "C:\\Users\\Sebastien\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Sebastien\\.nuget\\packages\\system.security.accesscontrol\\6.0.0\\system.security.accesscontrol.6.0.0.nupkg.sha512",
+    "C:\\Users\\Sebastien\\.nuget\\packages\\system.security.cryptography.protecteddata\\6.0.0\\system.security.cryptography.protecteddata.6.0.0.nupkg.sha512",
+    "C:\\Users\\Sebastien\\.nuget\\packages\\system.security.permissions\\6.0.0\\system.security.permissions.6.0.0.nupkg.sha512",
+    "C:\\Users\\Sebastien\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
